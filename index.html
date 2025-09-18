@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VibeStage</title>
+
+    <!--Links-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Agregar metaetiquetas para SEO -->
+    <meta name="description" content="Logistic app for Schools" />
+    <meta name="keywords" content="School logistic app" />
+    <meta name="author" content="ProDevs" />
+    <link rel="icon" type="assets/png" href="assets/logo-oscuro-t.png">
+    
+    <!-- Script de traducciones -->
+    <script src="js/translations.js"></script>
+</head>
+
+<!--=============== NAV ===============-->
+<nav role="navigation" aria-label="Main navigation">
+    <div class="nav__header">
+        <div class="nav__logo">
+            <a href="#" class="logo" aria-label="VibeStage Logo">
+                <img src="assets/LogoVS.jpeg" alt="VibeStage Logo"/>
+            </a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn" role="button" aria-expanded="false" aria-controls="nav-links" aria-label="Navigation menu">
+            <span class="material-icons">menu</span>
+        </div>
+    </div>
+    <ul class="nav__links" id="nav-links" role="menubar">
+        <li role="none"><a href="#home" data-i18n="nav-home" role="menuitem">Home</a></li>
+        <li role="none"><a href="#about-us" data-i18n="nav-about" role="menuitem">About Us</a></li>
+        <li role="none"><a href="#package" data-i18n="nav-plans" role="menuitem">Plans</a></li>
+        <li role="none"><a href="#contact" data-i18n="nav-contact" role="menuitem">Contact Us</a></li>
+    </ul>
+    <div class="nav__btns" role="group" aria-label="Action buttons">
+        <button class="btn language" onclick="toggleLanguage()" aria-label="Switch language">EN</button>
+        <button class="btn sign__up" data-i18n="btn-get-started" onclick="window.location.href='rutadeAppMovil'" aria-label="Get Started">Get Started</button>
+    </div>
+</nav>
+
+<!--=============== HOME ===============-->
+<div class="section__container fullwidth header__container header" id="home" style="border-radius: 0px;">
+    <div class="header__content header__title">
+        <h1 class="header__main-title" data-i18n="header-title">Where Musicians and Stages Meet</h1>
+        <p class="section__description" data-i18n="header-description-1">
+            Are you part of a band that wants to play live?
+            Do you have a bar or cultural space and are looking for talent?
+        </p>
+        <p class="section__description" data-i18n="header-description-2">
+            At <strong>VibeStage</strong> we connect artists with venues in a safe, organized and uncomplicated way.
+        </p>
+        <p class="section__description" style="font-size: 1.2em; color: #ffd700; margin: 20px 0;" data-i18n="header-join">
+            Join today and be part of the largest music community! Over 1000 artists and venues already trust us.
+        </p>
+        <div class="header__btns">
+            <button class="btn" data-i18n="btn-artist" onclick="window.location.href=''">I'm an Artist</button>
+            <button class="btn" data-i18n="btn-venue" onclick="window.location.href=''">I'm a Organizer</button>
+        </div>
+    </div>
+</div>
+
+<!--=============== ABOUT 1 ===============-->
+<div class="about__background">
+    <section class="about__section" id="about-us">
+        <div class="about__content">
+            <h2 class="section__header" data-i18n="about-title">About Us</h2>
+            <p data-i18n="about-p1">
+                <strong>VibeStage</strong> is a platform that connects emerging musicians with bars, clubs and event
+                promoters. We facilitate direct booking, venue management and promotion of musical events in one place.
+            </p>
+            <p data-i18n="about-p2">
+                Our platform allows venues to publish available dates and receive band applications according to style,
+                location and affinity. Musicians can schedule performances, sign digital contracts and receive secure
+                payments.
+            </p>
+            <p data-i18n="about-p3">
+                We automate key processes such as technical validation, shared scheduling, digital ticket generation and
+                post-event evaluation, creating a seamless and secure experience for artists and organizers.
+            </p>
+        </div>
+
+        <div class="about__image" style="width: 500px;">
+            <img src="assets/about.png" alt="about">
+        </div>
+    </section>
+</div>
+
+<!-----------TEAM ---------->
+
+<section class="team" id="team">
+    <div class="row">
+        <h2 class="section__header" data-i18n="team-title">Our Development Team</h2>
+    </div>
+    <div class="row">
+
+        <div class="column">
+            <div class="card">
+                <div class="img">
+                    <img src="assets/Rafael.jpg" alt="foto_rafael">
+                </div>
+                <h3>Rafael Cuya</h3>
+                <p data-i18n="team-role">Developer</p>
+                <div class="icons">
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="img">
+                    <img src="assets/" alt="foto_name">
+                </div>
+                <h3>Name2</h3>
+                <p data-i18n="team-role">Developer</p>
+                <div class="icons">
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="img">
+                    <img src="assets/juan.jpg" alt="foto_juan">
+                </div>
+                <h3>Juan Llamccaya</h3>
+                <p data-i18n="team-role">Developer</p>
+                <div class="icons">
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="img">
+                    <img src="assets/" alt="foto_name">
+                </div>
+                <h3>NAME4</h3>
+                <p data-i18n="team-role">Developer</p>
+                <div class="icons">
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="img">
+                    <img src="assets/" alt="">
+                </div>
+                <h3>Name5</h3>
+                <p data-i18n="team-role">Developer</p>
+                <div class="icons">
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Videos Section -->
+    <div class="team__videos">
+        <h3 class="videos__title" data-i18n="team-videos-title">Our Work in Action</h3>
+        <p class="videos__description" data-i18n="team-videos-description">
+            Watch our development team showcase the platform and explain our vision for connecting musicians with venues.
+        </p>
+        
+        <div class="videos__container">
+            <div class="video__item">
+                <div class="video__wrapper">
+                    <!-- Video: About the Team -->
+                    <iframe 
+                        src=""
+                        title="About VibeStage Development Team"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <h4 class="video__title" data-i18n="video-1-title">About the Team</h4>
+                <p class="video__description" data-i18n="video-1-description">
+                    Meet our development team and learn about their background, experience, and passion for connecting the music community.
+                </p>
+            </div>
+            
+            <div class="video__item">
+                <div class="video__wrapper">
+                    <!-- Video: About the Product -->
+                    <iframe 
+                        src=""
+                        title="About VibeStage Product"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <h4 class="video__title" data-i18n="video-2-title">About the Product</h4>
+                <p class="video__description" data-i18n="video-2-description">
+                    Discover how TocaAquí works, its key features, and how it revolutionizes the way musicians connect with venues.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!----------------------->
+
+
+<!--=============== ABOUT 2 ===============-->
+<section class="section__container experience__container">
+    <h2 class="section__header" data-i18n="features-title">Key tools to play live without complications</h2>
+    <div class="experience__content">
+        <div class="experience__card card-1">
+            <h4 data-i18n="feature-1-title">Free Dates Calendar</h4>
+            <p></p>
+            <p data-i18n="feature-1-desc">Venues post available dates and bands apply based on affinity, location and musical style.</p>
+        </div>
+        <div class="experience__card card-2">
+            <h4 data-i18n="feature-2-title">Digital Contracts & Secure Payments</h4>
+            <p></p>
+            <p data-i18n="feature-2-desc">Instant contract signing and escrow payments for added security.</p>
+        </div>
+        <div class="experience__card card-3">
+            <h4 data-i18n="feature-3-title">Logistics Manager</h4>
+            <p></p>
+            <p data-i18n="feature-3-desc">Upload your technical rider, schedule soundchecks and coordinate everything with the venue from the same platform.</p>
+        </div>
+        <div class="experience__card card-4">
+            <h4>Logistics Manager</h4>
+            <p></p>
+            <p>Upload your technical rider, schedule soundchecks and coordinate everything with the space from a single
+                platform.</p>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+<!--=============== PLAN ===============-->
+
+<section class="membership" id="package">
+    <div class="section__container membership__container">
+        <h2 class="section__header" data-i18n="plans-title">Select your ideal plan</h2>
+
+        <!-- Botones de selector -->
+        <div style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 2rem;">
+            <button class="btn" id="btn-spaces" data-i18n="btn-venues">For Venues</button>
+            <button class="btn btn-secondary" id="btn-artists" data-i18n="btn-artists">For Artists</button>
+        </div>
+        <h3 id="membership-title" style="text-align: center; color: white; margin-bottom: 2rem;" data-i18n="plans-venues-title">Venue Plans
+        </h3>
+
+        <!-- Planes para ESPACIOS -->
+        <div class="membership__grid" id="plans-spaces">
+            <div class="membership__card free">
+                <h4>VibeStage</h4>
+                <p>Basic</p>
+                <ul>
+                    <li><span><i class="ri-check-line"></i></span> Publication of up to 2 dates per month.</li>
+                    <li><span><i class="ri-check-line"></i></span> Up to 10 applications per event.</li>
+                    <li><span><i class="ri-check-line"></i></span> Signing of contracts with escrow payments.</li>
+                    <li><span><i class="ri-check-line"></i></span> Support by mail (72h).</li>
+                </ul>
+                <h3><sup>$</sup>00.00<span>/month</span></h3>
+            </div>
+
+            <div class="membership__card medium">
+                <h4>VibeStage</h4>
+                <p>Medium</p>
+                <ul>
+                    <li><span><i class="ri-check-line"></i></span> Publication of up to 10 dates per month.</li>
+                    <li><span><i class="ri-check-line"></i></span> Unlimited applications.</li>
+                    <li><span><i class="ri-check-line"></i></span> Automatic escrow.</li>
+                    <li><span><i class="ri-check-line"></i></span> Access to band ratings.</li>
+                    <li><span><i class="ri-check-line"></i></span> Technical validation.</li>
+                    <li><span><i class="ri-check-line"></i></span> Support within 48 hours.</li>
+                </ul>
+                <h3><sup>$</sup>15.00<span>/month</span></h3>
+            </div>
+
+            <div class="membership__card premium">
+                <h4>VibeStage</h4>
+                <p>Premium</p>
+                <ul>
+                    <li><span><i class="ri-check-line"></i></span> Unlimited publication + featured space.</li>
+                    <li><span><i class="ri-check-line"></i></span> Filtered applications.</li>
+                    <li><span><i class="ri-check-line"></i></span> Priority escrow.</li>
+                    <li><span><i class="ri-check-line"></i></span> Logistics automation.</li>
+                    <li><span><i class="ri-check-line"></i></span> Post-event reports.</li>
+                    <li><span><i class="ri-check-line"></i></span> 24/7 support.</li>
+                </ul>
+                <h3><sup>$</sup>30.00<span>/month</span></h3>
+            </div>
+        </div>
+
+        <!-- Planes para ARTISTAS -->
+        <div class="membership__grid" id="plans-artists" style="display: none;">
+            <div class="membership__card free">
+                <h4>VibeStage</h4>
+                <p>Basic</p>
+                <ul>
+                    <li><span><i class="ri-check-line"></i></span> Artistic profile registration.</li>
+                    <li><span><i class="ri-check-line"></i></span> Application to 3 events per month.</li>
+                    <li><span><i class="ri-check-line"></i></span> Signing of contracts + escrow.</li>
+                    <li><span><i class="ri-check-line"></i></span> Support by mail (72h).</li>
+                </ul>
+                <h3><sup>$</sup>00.00<span>/month</span></h3>
+            </div>
+
+            <div class="membership__card medium">
+                <h4>VibeStage</h4>
+                <p>Medium</p>
+                <ul>
+                    <li><span><i class="ri-check-line"></i></span> Unlimited application.</li>
+                    <li><span><i class="ri-check-line"></i></span> Access to shared agenda.</li>
+                    <li><span><i class="ri-check-line"></i></span> Validation of technical rider.</li>
+                    <li><span><i class="ri-check-line"></i></span> Guaranteed collection via escrow.</li>
+                    <li><span><i class="ri-check-line"></i></span> Support within 48h by mail or chat.</li>
+                </ul>
+                <h3><sup>$</sup>10.00<span>/month</span></h3>
+            </div>
+
+            <div class="membership__card premium">
+                <h4>VibeStage</h4>
+                <p>Premium</p>
+                <ul>
+                    <li><span><i class="ri-check-line"></i></span> High visibility + preferential filter.</li>
+                    <li><span><i class="ri-check-line"></i></span> Automatic scheduling and coordination.</li>
+                    <li><span><i class="ri-check-line"></i></span> Immediate payment after validation of the show.</li>
+                    <li><span><i class="ri-check-line"></i></span> Event promotion included.</li>
+                    <li><span><i class="ri-check-line"></i></span> 24/7 personalized support.</li>
+                </ul>
+                <h3><sup>$</sup>20.00<span>/month</span></h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=============== CONTACT US ===============-->
+
+<section class="section__container contact__container" id="contact">
+    <div class="contact-form">
+        <h2 class="section__header contact-text" data-i18n="contact-title">Contact us</h2>
+        <form id="contactForm">
+            <div class="form-row">
+                <div class="form-column">
+                    <div class="form-group">
+                        <label for="email" data-i18n="contact-email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Enter your Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n="contact-message">Message</label>
+                        <input class="input-message" type="text" id="message" name="message"
+                            placeholder="Enter your Message" required>
+                    </div>
+                </div>
+                <div class="form-column">
+                    <div class="form-group">
+                        <label for="phone" data-i18n="contact-phone">Telephone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="title" data-i18n="contact-subject">Subject</label>
+                        <input type="text" id="title" name="title" placeholder="Enter the Subject" required>
+                        <button class="btn button-contact-us" type="submit" data-i18n="contact-submit">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!--=============== FOOTER ===============-->
+<footer>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Browse</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Packages</a></li>
+                        <li><a href="#">Contact us at</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Social Media</h4>
+                    <ul>
+                        <li><a href="#"><span class="mdi mdi-facebook"></span> Facebook</a></li>
+                        <li><a href="#"><span class="mdi mdi-instagram"></span> Instagram</a></li>
+                        <li><a href="#"><span class="mdi mdi-linkedin"></span> LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</footer>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./main-en.js"></script>
+
+</body>
+
+</html>
+
