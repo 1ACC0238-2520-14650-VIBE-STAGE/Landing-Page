@@ -28,7 +28,7 @@
     <div class="nav__header">
         <div class="nav__logo">
             <a href="#" class="logo" aria-label="VibeStage Logo">
-                <img src="assets/LogoVS.jpeg" alt="VibeStage Logo"/>
+                <img src="assets/ChatGPT Image 12 nov 2025, 18_49_44.png" alt="VibeStage Logo"/>
             </a>
         </div>
         <div class="nav__menu__btn" id="menu-btn" role="button" aria-expanded="false" aria-controls="nav-links" aria-label="Navigation menu">
@@ -211,13 +211,15 @@
             <div class="video__item">
                 <div class="video__wrapper">
                     <!-- Video: About the Product -->
-                    <iframe 
-                        src=""
-                        title="About VibeStage Product"
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        allowfullscreen>
-                    </iframe>
+                        <div class="video__wrapper responsive-video">
+                        <iframe
+                            src="https://www.youtube.com/embed/skEPk4BmW1k"
+                            title="About VibeStage Product"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                            loading="lazy"></iframe>
+                        </div>  
                 </div>
                 <h4 class="video__title" data-i18n="video-2-title">About the Product</h4>
                 <p class="video__description" data-i18n="video-2-description">
@@ -350,6 +352,46 @@
         </div>
     </div>
 </section>
+
+<!--=============== APP SHOWCASE ===============-->
+
+<section class="section__container appshowcase__container" id="app-showcase" style="padding: 60px 20px; text-align: center; background-color: #0b0b0b; color: #fff;">
+  <h2 class="section__header" style="color: #fff; margin-bottom: 20px;">VibeStage App Showcase</h2>
+
+  <p style="color: #cfcfcf; max-width: 900px; margin: 0 auto 40px;">
+    Explore some of the main screens of our mobile app. These previews represent the real experience designed in Figma for artists and organizers.
+  </p>
+
+  <div class="appshowcase__grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:30px; justify-items:center; align-items:start;">
+
+    <!-- Card 1 -->
+    <figure class="phone-frame" style="width: 260px; height: 520px; border: 3px solid #FFD700; border-radius: 28px; position: relative; background-color: #0f0f0f; overflow: hidden; box-shadow: 0 8px 30px rgba(255,215,0,0.12); display:flex; align-items:center; justify-content:center;">
+      <img src="assets/WhatsApp Image 2025-11-12 at 6.51.50 PM.jpeg" alt="App Screen 1" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block;" onerror="this.style.opacity=0.0; this.nextElementSibling.style.display='flex'">
+      <!-- Placeholder shown if image falla -->
+      <div class="placeholder" style="display:none; position:absolute; inset:0; align-items:center; justify-content:center; color:#999; font-size:0.95rem;">
+        <span>No image (./assets/screen1.png)</span>
+      </div>
+    </figure>
+
+    <!-- Card 2 -->
+    <figure class="phone-frame" style="width: 260px; height: 520px; border: 3px solid #FFD700; border-radius: 28px; position: relative; background-color: #0f0f0f; overflow: hidden; box-shadow: 0 8px 30px rgba(255,215,0,0.12); display:flex; align-items:center; justify-content:center;">
+      <img src="assets/WhatsApp Image 2025-11-12 at 6.52.09 PM.jpeg" alt="App Screen 2" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block;" onerror="this.style.opacity=0.0; this.nextElementSibling.style.display='flex'">
+      <div class="placeholder" style="display:none; position:absolute; inset:0; align-items:center; justify-content:center; color:#999; font-size:0.95rem;">
+        <span>No image (./assets/screen2.png)</span>
+      </div>
+    </figure>
+
+    <!-- Card 3 -->
+    <figure class="phone-frame" style="width: 260px; height: 520px; border: 3px solid #FFD700; border-radius: 28px; position: relative; background-color: #0f0f0f; overflow: hidden; box-shadow: 0 8px 30px rgba(255,215,0,0.12); display:flex; align-items:center; justify-content:center;">
+      <img src="assets/WhatsApp Image 2025-11-12 at 6.52.24 PM.jpeg" alt="App Screen 3" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block;" onerror="this.style.opacity=0.0; this.nextElementSibling.style.display='flex'">
+      <div class="placeholder" style="display:none; position:absolute; inset:0; align-items:center; justify-content:center; color:#999; font-size:0.95rem;">
+        <span>No image (./assets/screen3.png)</span>
+      </div>
+    </figure>
+
+  </div>
+</section>
+
 
 <!--=============== CONTACT US ===============-->
 

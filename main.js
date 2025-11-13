@@ -56,3 +56,5 @@ btnArtists.addEventListener('click', () => {
   btnSpaces.classList.add('btn-secondary');
   title.textContent = 'Planes para Artistas';
 });
+
+ScrollReveal().reveal('#app-showcase .phone-frame', { origin: 'bottom', distance: '30px', duration: 700, interval: 120, opacity: 0, easing: 'ease' });

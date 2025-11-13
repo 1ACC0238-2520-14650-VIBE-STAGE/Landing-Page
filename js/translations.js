@@ -31,6 +31,10 @@ const translations = {
         'video-2-title': 'About the Product',
         'video-2-description': 'Discover how VibeStage works, its key features, and how it revolutionizes the way musicians connect with venues.',
         
+        'appshowcase-title': 'VibeStage App Showcase',
+        'appshowcase-desc': 'Explore some of the main screens of our mobile app. These previews represent the real experience designed in Figma for artists and organizers.',
+
+
         // Features
         'features-title': 'Key tools to play live without complications',
         'feature-1-title': 'Free Dates Calendar',
@@ -95,6 +99,10 @@ const translations = {
         'feature-3-title': 'Gestor de Logística',
         'feature-3-desc': 'Sube tu rider técnico, programa soundchecks y coordina todo con el espacio desde la misma plataforma.',
         
+
+        'appshowcase-title': 'Galería de la App VibeStage',
+        'appshowcase-desc': 'Explora algunas de las pantallas principales de nuestra app móvil. Estas vistas representan la experiencia real diseñada en Figma para artistas y organizadores.',
+
         // Planes
         'plans-title': 'Selecciona tu plan ideal',
         'btn-venues': 'Para Organizadores',
@@ -139,6 +147,13 @@ function toggleLanguage() {
     // Actualizar el texto del botón
     const langButton = document.querySelector('.language');
     langButton.textContent = currentLang.toUpperCase();
+    // APP SHOWCASE translation by selectors (no data-i18n needed)
+const showcaseTitle = document.querySelector('#app-showcase h2');
+const showcaseDesc = document.querySelector('#app-showcase p');
+
+if (showcaseTitle) showcaseTitle.textContent = translations[lang]['appshowcase-title'];
+if (showcaseDesc) showcaseDesc.textContent = translations[lang]['appshowcase-desc'];
+
 }
 
 // Inicializar el idioma cuando se carga la página
